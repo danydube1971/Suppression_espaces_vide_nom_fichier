@@ -1,6 +1,6 @@
 # Suppression_espaces_vide_nom_fichier
 
-Ce script Bash pour Linux renomme tous les fichiers dans le dossier courant et les sous-dossiers en remplaçant les espaces par des underscores. 
+Ce script Bash (et python 3) pour Linux renomme tous les fichiers dans le dossier courant et les sous-dossiers en remplaçant les espaces par des underscores. 
 
 Voici ce que fait chaque ligne du script :
 
