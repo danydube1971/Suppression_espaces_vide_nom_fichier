@@ -1,19 +1,8 @@
 # Suppression_espaces_vide_nom_fichier
 
-Ce script Bash (et python 3) pour Linux renomme tous les fichiers dans le dossier courant et les sous-dossiers en remplaçant les espaces par des underscores. 
+Ce code va parcourir tous les fichiers dans le dossier courant et les sous-dossiers, et pour chaque fichier, il va remplacer les caractères spéciaux par leurs équivalents sans accent en utilisant la fonction unidecode(), puis remplacer les espaces par des barres de soulignement en utilisant la fonction replace(). Si le nom du fichier est modifié, il sera renommé avec le nouveau nom en utilisant la fonction os.rename().
 
-Voici ce que fait chaque ligne du script :
+**Comment utiliser le script**
 
-1. La première ligne déclare que le script doit être exécuté dans l'interpréteur de commande Bash.
-2. La deuxième ligne utilise la commande "find" pour trouver tous les fichiers (et non pas les dossiers) 
-dans le répertoire courant et les sous-dossiers qui ont un nom contenant des espaces. Ces fichiers sont stockés dans la variable "find".
-3. La troisième ligne utilise la commande "exec" pour exécuter une commande Bash sur chaque fichier trouvé par la commande "find". 
-La commande Bash renomme chaque fichier en remplaçant les espaces par des underscores en utilisant la commande "mv".
-4. La commande "bash -c" est utilisée pour permettre l'utilisation de la substitution de variable. 
-La variable "$0" fait référence à chaque fichier trouvé par la commande "find".
-5. La commande "${0// /_}" remplace tous les espaces dans le nom du fichier par des underscores.
-6. La commande "{} ;" est utilisée pour indiquer que la commande doit être exécutée pour chaque fichier trouvé.
-
-En résumé, ce script permet de renommer tous les fichiers dans le dossier courant et les sous-dossiers en remplaçant les espaces 
-par des underscores pour faciliter leur manipulation par la suite.
-
+1. Placez-y le script au même emplacement que les fichiers à renommer.
+2. Exécuter le script dans un terminal Linux: **python3 "Suppression_des_espaces_vides_V2.py"**
