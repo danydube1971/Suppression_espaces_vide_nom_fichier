@@ -1,4 +1,6 @@
-"""Ce code va parcourir tous les fichiers dans le dossier courant et les sous-dossiers, et pour chaque fichier, il va remplacer les caractères spéciaux par leurs équivalents sans accent en utilisant la fonction unidecode(), puis remplacer les espaces par des barres de soulignement en utilisant la fonction replace(). Si le nom du fichier est modifié, il sera renommé avec le nouveau nom en utilisant la fonction os.rename()."""
+"""Ce code va parcourir tous les fichiers dans le dossier courant et les sous-dossiers, et pour chaque fichier, il va remplacer les caractères spéciaux par leurs équivalents 
+sans accent en utilisant la fonction unidecode(), puis remplacer les espaces par des barres de soulignement en utilisant la fonction replace(). 
+Si le nom du fichier est modifié, il sera renommé avec le nouveau nom en utilisant la fonction os.rename()."""
 
 import os
 from unidecode import unidecode
